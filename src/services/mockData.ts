@@ -12,6 +12,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.8,
         reviews_count: 245,
         in_stock: true,
+        views: 1200,
     },
     {
         id: 2,
@@ -23,6 +24,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.5,
         reviews_count: 189,
         in_stock: true,
+        views: 950,
     },
     {
         id: 3,
@@ -35,6 +37,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.6,
         reviews_count: 156,
         in_stock: true,
+        views: 800,
     },
     {
         id: 4,
@@ -46,6 +49,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.3,
         reviews_count: 98,
         in_stock: true,
+        views: 600,
     },
     {
         id: 5,
@@ -57,6 +61,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.4,
         reviews_count: 124,
         in_stock: true,
+        views: 700,
     },
     {
         id: 6,
@@ -69,6 +74,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.2,
         reviews_count: 67,
         in_stock: true,
+        views: 400,
     },
     {
         id: 7,
@@ -80,6 +86,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.7,
         reviews_count: 203,
         in_stock: true,
+        views: 1100,
     },
     {
         id: 8,
@@ -91,6 +98,7 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.5,
         reviews_count: 156,
         in_stock: true,
+        views: 300,
     },
     {
         id: 9,
@@ -103,5 +111,6 @@ export const DEMO_PRODUCTS: Product[] = [
         rating: 4.9,
         reviews_count: 312,
         in_stock: false,
+        views: 1500,
     },
 ];

@@ -18,6 +18,7 @@ export interface Product {
     rating: number;
     reviews_count: number;
     in_stock: boolean;
+    views: number; // nombre de vues
 }
 
 export interface Review {

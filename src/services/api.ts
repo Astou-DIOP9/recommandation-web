@@ -141,9 +141,8 @@ const toFrontendProduct = (raw: BackendProduct): Product => {
     const reviewsCount =
         typeof raw.reviews_count === 'number'
             ? raw.reviews_count
-            : typeof raw.views_count === 'number'
-                ? raw.views_count
-                : 0;
+            : 0;
+    const views = typeof raw.views_count === 'number' ? raw.views_count : 0;
 
     return {
         id: raw.id,
@@ -158,6 +157,7 @@ const toFrontendProduct = (raw: BackendProduct): Product => {
         rating,
         reviews_count: reviewsCount,
         in_stock: raw.in_stock ?? true,
+        views,
     };
 };
 
@@ -1183,6 +1183,7 @@ class ApiService {
                 in_stock: data.in_stock,
                 rating: 0,
                 reviews_count: 0,
+                views: typeof data.views === 'number' ? data.views : 0,
             };
 
             setStoredProducts([created, ...products]);

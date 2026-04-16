@@ -266,6 +266,7 @@ export const AdminPage: React.FC = () => {
                 image: imageUrl,
                 category: form.category,
                 in_stock: form.in_stock,
+                views: 0,
             };
 
             if (editingProduct) {
@@ -417,6 +418,7 @@ export const AdminPage: React.FC = () => {
                                                 <th className="px-4 py-3 text-left">Catégorie</th>
                                                 <th className="px-4 py-3 text-right">Prix</th>
                                                 <th className="px-4 py-3 text-center">Stock</th>
+                                                <th className="px-4 py-3 text-center">Vues</th>
                                                 <th className="px-4 py-3 text-center">Actions</th>
                                             </tr>
                                         </thead>
@@ -462,6 +464,9 @@ export const AdminPage: React.FC = () => {
                                                         <span className={`text-xs font-semibold px-2 py-1 rounded-full ${product.in_stock ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                                                             {product.in_stock ? 'En stock' : 'Rupture'}
                                                         </span>
+                                                    </td>
+                                                    <td className="px-4 py-3 text-center">
+                                                        <span className="text-xs font-semibold text-gray-700">{product.views}</span>
                                                     </td>
                                                     <td className="px-4 py-3 text-center whitespace-nowrap">
                                                         <button

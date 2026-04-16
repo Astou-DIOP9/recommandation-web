@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: rgb(147, 51, 234);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: rgb(109, 40, 217);
+}
+
+a.admin-top-link,
+a.admin-top-link:hover,
+a.admin-top-link:visited,
+a.admin-top-link:focus {
+  color: #ffffff !important;
+}
+
+button {
+  transition: all 0.3s;
+}
+
+button[class*="bg-purple-5"],
+button[class*="bg-purple-6"],
+button[class*="bg-purple-7"],
+button[class*="bg-purple-8"],
+button[class*="bg-purple-9"] {
+  color: #ffffff;
+}
+
+button.role-color-preserve {
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
